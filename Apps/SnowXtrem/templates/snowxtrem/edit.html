@@ -2,8 +2,10 @@
 {% load bootstrap4 %}
 {% block title %}Edit{% endblock title %}
 {% block content %}
-<h2>Edit your account</h2>
-<p>You can edit your account using the follow form</p>
+<<div class="title">
+  <h2>Edit your account</h2>
+  <p>You can edit your account using the follow form</p>
+</div>
 <form action="" method="post" class="form">
     {% csrf_token %}
     {% bootstrap_form form %}
