@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block title %}Dashboard{% endblock title %}
-{% block content %}
-<h1 class="title">{{welcome}}</h1>
-<br>
-<a href="{% url 'snowxtrem:edit' %}" class="btn btn-primary">Edit Your Profile</a> or
-<a href="{% url 'snowxtrem:password_change' %}" class="btn btn-warning">Change your password</a>
-<hr>
-{% endblock content %}

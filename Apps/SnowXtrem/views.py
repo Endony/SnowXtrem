@@ -7,12 +7,32 @@ from .forms import UserRegistration, UserEditForm
 # Create your views here.
 
 @login_required
-def dashboard(request):
+def home(request):
     context = {
-        "welcome": "Welcome to your dashboard"
+        "welcome": "Welcome to SnowXtrem"
     }
-    return render(request, 'snowxtrem/dashboard.html', context=context)
+    return render(request, 'snowxtrem/home.html', context=context)
 
+@login_required
+def news(request):
+    context = {
+        "news": "News"
+    }
+    return render(request, 'snowxtrem/news.html', context=context)
+
+@login_required
+def parks(request):
+    context = {
+        "parks": "Parks"
+    }
+    return render(request, 'snowxtrem/parks.html', context=context)
+
+@login_required
+def gallery(request):
+    context = {
+        "gallery": "Gallery"
+    }
+    return render(request, 'snowxtrem/gallery.html', context=context)
 
 def register(request):
     if request.method == 'POST':
@@ -41,6 +61,7 @@ def edit(request):
                                  data=request.POST)
         if user_form.is_valid():
             user_form.save()
+            return render(request, 'snowxtrem/home.html')
     else:
         user_form = UserEditForm(instance=request.user)
     context = {

@@ -129,7 +129,7 @@ STATICFILES_DIRS = (
 )
 
 
-LOGIN_REDIRECT_URL = 'snowxtrem:dashboard'
+LOGIN_REDIRECT_URL = 'snowxtrem:home'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 

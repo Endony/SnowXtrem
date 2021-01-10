@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+<h1 class="title">{{welcome}}</h1>
+<br>
+<hr>
+<div id="gallery">
+  <h2><a href="{% url 'snowxtrem:gallery' %}" style="color:black;text-decoration:none">Gallery</a></h2>
+  <div class="album py-5 bg-light">
+    <div class="container album">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <a href="{% url 'snowxtrem:gallery' %}"><img class="card-img-top" src="https://images.unsplash.com/photo-1488580923008-6f98dfbd7a25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <a href="{% url 'snowxtrem:gallery' %}"><img class="card-img-top" src="https://images.unsplash.com/photo-1505873346750-69ce3daeb225?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80" alt="Card image cap"></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <a href="{% url 'snowxtrem:gallery' %}"><img class="card-img-top" src="https://images.unsplash.com/photo-1532124957326-34c5605398?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2tpfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60&fbclid=IwAR2cC094-pekKN7cyml-6wndR5uDsDjuRLvZ5J5EBjtCPfvhfHJpQ9NAr0s" alt="Card image cap"></a>
+          </div>
+        </div>
+      </div>
+      <p class="seemore"><a href="{% url 'snowxtrem:gallery' %}">See more <i class="fas fa-arrow-right"></i></a></p>
+    </div>
+  </div>
+</div>
+<hr>
+<div id="news">
+  <h2><a href="{% url 'snowxtrem:news' %}" style="color:black;text-decoration:none">News</a></h2>
+  <div class="album py-5 bg-light">
+    <div class="container album">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://i.ytimg.com/vi/lThwdvZJGLw/maxresdefault.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">ESPN X Games announced today that X Games Aspen 2021 will return to Buttermilk Mountain in Aspen Snowmass for the 20th-consecutive year January 29-31. Nearly 100 of the world's-best winter athletes will descend upon the biggest stage in action sports, competing in 14 disciplines live on ESPN, ESPN2 and ABC, and presented across the globe through international syndication partners. Fans can also follow @XGames across digital and social media platforms for behind-the-scenes, athlete-curated and complementary content that enhance the X Games Aspen telecasts.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:news' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://cdn-s-www.ledauphine.com/images/299EA364-97E2-43D5-9D78-CEE6EC3DEF3F/SCH_04/l-exploit-de-delphine-claudel-photo-agence-zoom-laurent-salino.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Grosse performance de la Vosgienne Delphine Claudel ce dimanche, 3e de la montée finale de l'Alpe Cermis aux pentes vertigineuses. Un premier podium d'une Française en Coupe du monde depuis 2013 ! L'Américaine Jessie Diggins remporte le Tour de Ski. tandis que la Suédoise Ebba Andersson s'impose ce dimanche au bout de l'effort.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:news' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/M%C3%A9daille_de_Bronze_pour_Kevin_Rolland_%C3%A0_Sochi_2014.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Neuf fois médaillé des X Games (dont 5 en or) en halfpipe, Kevin Rolland ne participera pas à l'édition 2021 d'Aspen, aux États-Unis, prévue du 29 au 31 janvier. Côté Français, on retrouvera les ambitieux Tess Ledeux et Antoine Adelisse.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:news' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="seemore"><a href="{% url 'snowxtrem:news' %}">See more <i class="fas fa-arrow-right"></i></a></p>
+    </div>
+  </div>
+</div>
+<hr>
+<div id="parks">
+  <h2><a href="{% url 'snowxtrem:parks' %}" style="color:black;text-decoration:none">Parks</a></h2>
+  <div class="album py-5 bg-light">
+    <div class="container album">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/HH1YB3qmLLxrsvzMQdcANsv4auh9bcx-AxjbH1p1p4jaZrPyLwD3iClwaeQIW-AurtQhrrc4tZYteaPoUEJ5nre-vxHPcPJagmmF3ncJTYScUmnPsy0g1r5MvW_BqEnNKV1Ng28" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Ce n'est pas pour rien si le premier snowpark français a été créé à Avoriaz. Les locaux ont toujours donné la tendance, à l'instar de Nicolas Droz, grande star des années 90/2000 qui est encore connu comme le patron de la station. Avoriaz aussi est la station qui a le plus investi dans le snowboard.
+Elle possède un halfpipe et plusieurs snowparks de qualité, dont le Stash et ses modules en bois dans la forêt, conçu en collaboration avec Burton.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:parks' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://www.snowsurf.com/media/NEWS_2017/vier%202017/top10_parks/chamrousse.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">La petite station iséroise joue les outsiders parmi les gros grâce à son Sunset Park. Au programme, une vue imprenable sur Grenoble et un parcours du haut en bas de la piste jonchée de modules très ludiques qui conviendront à tous les niveaux. Les amateurs de kickers trouveront aussi un slopestyle plus classique. Le park est sous son meilleur jour au moment de la session BangingBees Top To Bottom fin mars.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:parks' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" src="https://www.snowsurf.com/media/NEWS_2017/vier%202017/top10_parks/les_arcs_snowpark1%C2%A9andy_parant_les_arcs.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Même si l'histoire du snowboard aux Arcs est plus liée au backcountry, le snowpark est en train de prendre de l'ampleur depuis trois ou quatre ans, sous l'impulsion de locaux motivés qui ont plein de bonnes idées. La John Doe Session en fin de saison est le moment où le park est à son apogée.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="{% url 'snowxtrem:parks' %}" class="btn btn-sm btn-outline-secondary">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="seemore"><a href="{% url 'snowxtrem:parks' %}">See more <i class="fas fa-arrow-right"></i></a></p>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

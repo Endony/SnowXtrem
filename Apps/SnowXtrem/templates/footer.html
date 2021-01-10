@@ -1,0 +1,50 @@
+<footer class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div id="text-footer" class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Footer Content</h5>
+
+        <p style="text-align:justify">
+          Get all actualities about xtrem winter sports.
+          See pictures on the greatest skier and snowboarder.
+          Get infos on snowparks in France. Thanks to visite
+          our website SnowXtrem.
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="float:right">
+        <h5 class="text-uppercase mb-0">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="{% url 'snowxtrem:home' %}">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'snowxtrem:gallery' %}">Gallery</a>
+          </li>
+          <li>
+            <a href="{% url 'snowxtrem:news' %}">News</a>
+          </li>
+          <li>
+            <a href="{% url 'snowxtrem:parks' %}">Parks</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="{% url 'snowxtrem:home' %}">SnowXtrem.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>

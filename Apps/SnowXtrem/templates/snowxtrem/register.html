@@ -8,8 +8,11 @@
 {% if form.errors %}
 
 {% endif %}
-
-<form action="" method="post" class="form container">
+<div class="title">
+  <h1>Register</h1>
+  <hr>
+</div>
+<form action="" method="post" class="form">
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}

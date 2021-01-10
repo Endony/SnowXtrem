@@ -10,7 +10,10 @@
     {% csrf_token %}
     {% bootstrap_form form %}
     {% buttons %}
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="{% url 'snowxtrem:password_change' %}" class="btn btn-warning">Change password</a>
+    </div>
     {% endbuttons %}
 </form>
 {% endblock content %}
